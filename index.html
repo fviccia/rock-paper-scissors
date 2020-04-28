@@ -20,9 +20,45 @@ function computerPlay() {
     return play;
 }
 
+function userPlay() {
+    let playerSelection = window.prompt('Choose Rock, Paper, Scissors');
+    playerSelection = playerSelection.toLowerCase();
+    let notValid = 'You must enter a valid option.';
+
+    if (playerSelection === 'rock' | 'paper' | 'scissors') {
+        return playerSelection
+    } else {
+        return notValid;
+    }
+
+}
+
+/*
+
+                    rock	            paper	        scissors
+
+rock	            tie	                player wins	    computer wins
+paper	            computer wins	    tie	            player wins
+scissors	        player wins	        computer wins	tie
+
+*/
 
 
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection === computerSelection) {
+        result = 'The result is a tie!';
+    } 
+    if (playerSelection === 'rock') {
 
+
+    }
+    
+
+    return result;
+}
+
+let playerSelection = userPlay();
+let computerSelection = computerPlay();
 
 
 
