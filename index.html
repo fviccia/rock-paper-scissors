@@ -44,18 +44,35 @@ scissors	        player wins	        computer wins	tie
 */
 
 
-function playRound(playerSelection, computerSelection) {
-    if (playerSelection === computerSelection) {
-        result = 'The result is a tie!';
-    } 
+function playRound(playerSelection, computerSelection) { 
     if (playerSelection === 'rock') {
+        if (computerSelection === 'paper') {
+            result = 'computer';
+        } else if (computerSelection === 'scissors') {
+            result = 'player';
+        } else {
+            result = 'tie';
+        }
 
-
-    }
-    
-
+    } else if (playerSelection === 'paper') {
+        if (computerSelection === 'rock') {
+            result = 'player';
+        } else if (computerSelection === 'scissors') {
+            result = 'computer';
+        } else {
+            result = 'tie';
+        }
+    } else if (playerSelection === 'scissors') {
+        if (computerSelection === 'rock') {
+            result = 'computer';
+        } else if (computerSelection === 'paper') {
+            result = 'player';
+        } else {
+            result = 'tie';
+        }
+    } 
     return result;
-}
+} 
 
 let playerSelection = userPlay();
 let computerSelection = computerPlay();
