@@ -8,6 +8,17 @@
 
   <script>
 
+function computerPlay() {
+    let num = Math.floor(Math.random()*3);
+    if (num == 0) {
+        play = 'rock'
+    } else if (num == 1) {
+        play = 'paper'
+    } else {
+        play = 'scissors'
+    }
+    return play;
+}
 
 
 
@@ -18,7 +29,6 @@
 
 
 
-      
     
   </script>
 </body>
