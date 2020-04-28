@@ -23,13 +23,7 @@ function computerPlay() {
 function userPlay() {
     let playerSelection = window.prompt('Choose Rock, Paper, Scissors');
     playerSelection = playerSelection.toLowerCase();
-    let notValid = 'You must enter a valid option.';
-
-    if (playerSelection === 'rock' | 'paper' | 'scissors') {
-        return playerSelection
-    } else {
-        return notValid;
-    }
+    return playerSelection;
 
 }
 
@@ -43,39 +37,35 @@ scissors	        player wins	        computer wins	tie
 
 */
 
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection === 'rock' & computerSelection === 'rock') {
+        return 'tie';
+    } else if (playerSelection === 'rock' & computerSelection === 'paper') {
+        return 'computer';
+    } else if (playerSelection === 'rock' & computerSelection === 'scissors') {
+        return 'player';
+    } else if (playerSelection === 'paper' & computerSelection === 'rock') {
+        return 'player';
+    } else if (playerSelection === 'paper' & computerSelection === 'paper') {
+        return 'tie';
+    } else if (playerSelection === 'paper' & computerSelection === 'scissors') {
+        return 'computer';
+    } else if (playerSelection === 'scissors' & computerSelection === 'rock') {
+        return 'computer';
+    } else if (playerSelection === 'scissors' & computerSelection === 'paper') {
+        return 'player';
+    } else if (playerSelection === 'scissors' & computerSelection === 'scissors') {
+        return 'tie';
+    } else {
+        return 'Not valid selection';
+    }
 
-function playRound(playerSelection, computerSelection) { 
-    if (playerSelection === 'rock') {
-        if (computerSelection === 'paper') {
-            result = 'computer';
-        } else if (computerSelection === 'scissors') {
-            result = 'player';
-        } else {
-            result = 'tie';
-        }
-
-    } else if (playerSelection === 'paper') {
-        if (computerSelection === 'rock') {
-            result = 'player';
-        } else if (computerSelection === 'scissors') {
-            result = 'computer';
-        } else {
-            result = 'tie';
-        }
-    } else if (playerSelection === 'scissors') {
-        if (computerSelection === 'rock') {
-            result = 'computer';
-        } else if (computerSelection === 'paper') {
-            result = 'player';
-        } else {
-            result = 'tie';
-        }
-    } 
-    return result;
 } 
+
 
 let playerSelection = userPlay();
 let computerSelection = computerPlay();
+console.log(playRound(playerSelection, computerSelection))
 
 
 
