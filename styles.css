@@ -1,3 +1,9 @@
+body {
+  background-image: url(./wallpaper.jpg);
+  background-repeat: repeat;
+  background-size: 200px auto;
+}
+
 .results {
   display: flex;
   align-items: center;
@@ -20,7 +26,7 @@
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.7);
   text-shadow: 0 0 .5rem black;
 }
 
@@ -49,6 +55,7 @@
   text-align: center;
   color: white;
   background: lightblue;
+  opacity: 0.9;
   text-shadow: 0 0 .5rem black;
 }
 .alt1button {
@@ -61,7 +68,8 @@
   width: 10rem;
   text-align: center;
   color: white;
-  background: violet;
+  background: lightpink;
+  opacity: 0.9;
   text-shadow: 0 0 .5rem black;
 }
 
