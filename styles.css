@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 body {
   background-image: url(./wallpaper.jpg);
   background-repeat: repeat;
   background-size: 200px auto;
 }
 
-=======
->>>>>>> 6ea761fb8270d7cd7c05e6c1400fe4a66e1238f9
 .results {
   display: flex;
   align-items: center;
@@ -29,11 +26,7 @@ body {
   width: 10rem;
   text-align: center;
   color: white;
-<<<<<<< HEAD
   background: rgba(0,0,0,0.7);
-=======
-  background: rgba(0,0,0,0.4);
->>>>>>> 6ea761fb8270d7cd7c05e6c1400fe4a66e1238f9
   text-shadow: 0 0 .5rem black;
 }
 
@@ -62,10 +55,7 @@ body {
   text-align: center;
   color: white;
   background: lightblue;
-<<<<<<< HEAD
   opacity: 0.9;
-=======
->>>>>>> 6ea761fb8270d7cd7c05e6c1400fe4a66e1238f9
   text-shadow: 0 0 .5rem black;
 }
 .alt1button {
@@ -78,12 +68,8 @@ body {
   width: 10rem;
   text-align: center;
   color: white;
-<<<<<<< HEAD
   background: lightpink;
   opacity: 0.9;
-=======
-  background: violet;
->>>>>>> 6ea761fb8270d7cd7c05e6c1400fe4a66e1238f9
   text-shadow: 0 0 .5rem black;
 }
 
